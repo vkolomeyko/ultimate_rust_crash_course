@@ -50,7 +50,7 @@ fn main() {
 }
 
 fn bedazzle(str: &mut String) {
-    (*str) = "sparkly".to_string()
+    *str = "sparkly".to_string()
 }
 
 fn eat(str: String) -> bool {   
@@ -59,7 +59,7 @@ fn eat(str: String) -> bool {
 
 fn change(str: &mut String) {
     if !str.ends_with('s') {
-        str.push_str("s");
+        str.push('s');
     }
 }
 
